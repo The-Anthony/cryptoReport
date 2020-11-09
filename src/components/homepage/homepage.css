@@ -1,0 +1,197 @@
+:root {
+    --bgColor: #1D2228;
+    --color: #E1E2E2;
+    --empColor: #FB8122;
+}
+
+.custom-shape-divider-bottom-1604909410 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1604909410 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 238px;
+}
+
+.custom-shape-divider-bottom-1604909410 .shape-fill {
+    fill: var(--empColor);
+}
+
+.background {
+    position: relative;
+}
+.homepage {
+    height: 100vh;
+    background-color: var(--bgColor);
+    width: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: -50px;
+}
+.page {
+    height: 100vh;
+    z-index: 1;
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Staatliches', cursive;
+}
+.emph {
+    font-size: 1.2em;
+    color: var(--empColor);
+}
+
+.bitcoin {
+    width: 40px;
+    position: absolute;
+    top: 61%;
+    right: 10%;
+    transition: width 1s;
+}
+
+.bitcoin1 {
+    width: 40px;
+    position: absolute;
+    top: 68%;
+    left: 15%;
+    transition: width 1s;
+}
+.bitcoin2 {
+    width: 40px;
+    position: absolute;
+    top: 33%;
+    right: 15%;
+    transition: width 1s;
+}
+
+
+.button {
+    padding: 10px 30px;
+    border: 0;
+    background-color: var(--empColor);
+    color: var(--bgColor);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.3em;
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.77);
+    transition: all 1s;
+}
+.button:hover{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+}
+.button:focus{
+    outline: none;
+    padding: 10px 25px;
+    background-color: #ac4d05;
+}
+
+@media only screen and (max-width:540px){
+    .text h1 {
+        font-size: 3em;
+    }
+    .text {
+        padding: auto 20px;
+    }
+}
+
+/*MEDIA QUERY PER DISPOSITIVI CON SCHERMO RETINA -- (APPLE)*/
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 700px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min-resolution: 192dpi) and (min-width: 700px),
+only screen and ( min-resolution: 2dppx) and (min-width: 700px) {
+
+        .text h1 {
+            font-size: 6em;
+        }
+
+        .text p {
+            font-size: 2em;
+        }
+        .button {
+            font-size: 2em;
+            padding: 25px 2em;
+        }
+        .button:hover{
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .button:focus{
+            outline: none;
+            padding: 25px;
+            background-color: #ac4d05;
+        }
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1024px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1024px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1024px) {
+        
+        .text h1 {
+            font-size: 8em;
+        }
+
+        .text p {
+            font-size: 2.5em;
+        }
+
+        .button {
+            font-size: 2.5em;
+        }
+        
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1920px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1920px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1920px) {
+
+    .text h1 {
+        font-size: 10em;
+    }
+
+    .text p {
+        font-size: 4em;
+    }
+
+    .button {
+        font-size: 3em;
+    }
+
+    .bitcoin1, .bitcoin2, .bitcoin {
+        width: 70px;
+    }
+
+    .custom-shape-divider-bottom-1604909410 svg{
+        height: 452px;
+    }
+}

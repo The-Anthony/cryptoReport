@@ -1,0 +1,177 @@
+:root {
+    --bgPage: #1D2228;
+    --colorPage: #E1E2E2;
+    --empPage: #FB8122;
+}
+
+.pageError {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bgPage);
+    color: var(--colorPage);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.imageDiv {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageError {
+    width: 70%;
+}
+
+.textDiv {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textDiv h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+.textDiv p {
+    width: 60%;
+}
+.emphError {
+    color: var(--empPage);
+}
+
+.buttonError {
+    padding: 10px 30px;
+    border: 0;
+    background-color: var(--empColor);
+    color: var(--bgColor);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.3em;
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.77);
+    transition: all 1s;
+}
+.buttonError:hover{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+}
+.buttonError:focus{
+    outline: none;
+    padding: 10px 25px;
+    background-color: #ac4d05;
+}
+
+@media only screen and (max-width:540px) {
+    .pageError {
+        flex-direction: column;
+    }
+    .textDiv, .imageDiv {
+        width: 80%;
+    }
+    .textDiv p {
+        width: 80%;
+    }
+    .imageError{
+        width: 80%;
+    }
+}
+
+/*MEDIA QUERY PER DISPOSITIVI CON SCHERMO RETINA -- (APPLE)*/
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 700px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min-resolution: 192dpi) and (min-width: 700px),
+only screen and ( min-resolution: 2dppx) and (min-width: 700px) {
+
+        .pageError {
+            flex-direction: column;
+        }
+        .textDiv, .imageDiv {
+            width: 80%;
+        }
+        .textDiv h1 {
+            font-size: 3.5em;
+        }
+        .textDiv p {
+            font-size: 1.5em;
+            width: 80%;
+        }
+
+        .buttonError {
+            font-size: 2em;
+        }
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1024px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1024px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1024px) {
+
+        .pageError {
+            flex-direction: column;
+        }
+        .textDiv, .imageDiv {
+            width: 80%;
+        }
+        .textDiv h1 {
+            font-size: 4em;
+        }
+        .textDiv p {
+            font-size: 2em;
+            width: 80%;
+        }
+
+        .buttonError {
+            font-size: 2em;
+        }
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1920px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1920px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1920px) {
+
+        .pageError {
+            flex-direction: row;
+        }
+
+        .textDiv, .imageDiv {
+            width: 80%;
+        }
+        .textDiv h1 {
+            font-size: 6em;
+        }
+        .textDiv h2 {
+            font-size: 3em;
+        }
+        .textDiv p {
+            font-size: 3em;
+            width: 80%;
+        }
+
+        .buttonError {
+            font-size: 3em;
+            padding: 20px;
+        }
+}

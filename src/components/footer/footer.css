@@ -1,0 +1,130 @@
+:root {
+    --bgFooter: #13171B;
+    --colFooter: #E1E2E2;
+    --empFooter: #FB8122;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: var(--bgFooter);
+    color: var(--colFooter);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    margin-top: 50px;
+}
+
+.thanks, .contact {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emphF {
+    color: var(--empFooter);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.icon {
+    width: 50px;
+}
+
+@media only screen and (max-width:540px) {
+    .footer {
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+    .contact, .thanks {
+        width: 95%;
+    }
+    .icons {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:541px) and (max-width:940px) {
+    .icons {
+        width: 90%;
+    }
+}
+
+/*MEDIA QUERY PER DISPOSITIVI CON SCHERMO RETINA -- (APPLE)*/
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 700px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min-resolution: 192dpi) and (min-width: 700px),
+only screen and ( min-resolution: 2dppx) and (min-width: 700px) {
+
+    .thanks p, .contact p {
+        font-size: 1.3em;
+    }
+    .contact h4 {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1024px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1024px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1024px) {
+       
+    .footer {
+        height: 450px;
+    }
+
+    .thanks p, .contact p {
+        font-size: 1.5em;
+    }
+    .contact h4 {
+        font-size: 1.7em;
+    }
+
+
+        
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1920px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1920px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1920px) {
+    
+    .footer {
+        height: 600px;
+    }
+
+    .thanks p, .contact p {
+        font-size: 2.3em;
+    }
+    .contact h4 {
+        font-size: 2.7em;
+    }
+
+    .icon {
+        width: 100px;
+    }
+
+}
