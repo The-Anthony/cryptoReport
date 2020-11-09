@@ -129,11 +129,11 @@ const DataPage = () => {
                 <CryptoCard
                 key={index}
                 number={index}
-                symbol={item.symbol}
-                marketCap={item.quote.USD.market_cap}
-                price={item.quote.USD.price}
-                volume24h={item.quote.USD.volume_24h}
-                percentChange={item.quote.USD.percent_change_24h}
+                symbol={item.symbol !== undefined? item.symbol : 'Dato non disponibile'}
+                marketCap={item.quote !== undefined? item.quote.USD.market_cap: 'Dato non disponibile'}
+                price={item.quote !== undefined? item.quote.USD.price: 'Dato non disponibile'}
+                volume24h={item.quote !== undefined? item.quote.USD.volume_24h: 'Dato non disponibile'}
+                percentChange={item.quote !== undefined? item.quote.USD.percent_change_24h: 'Dato non disponibile'}
                 />))}
             </div>
            
