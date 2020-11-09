@@ -32,7 +32,7 @@ const Guide = () => {
                    <p>Il volume è un elemento fondamentale nel mondo della finanza e nell'economia. Esso equivale al <span className={style.guideEmph}>totale di contratti stipulati</span> in un determinato periodo di tempo con un bene. Con contratto si intende ogni singola vendita, pagamento o scambio tracciato. Per esempio, quando paghiamo al market e riceviamo uno scontrino, stiamo stipulando un contratto, e anch'esso è incluso nel volume di mercato dell'Euro. Perciò il volume nelle ultime 24h di una criptovaluta indica il suo utilizzo, <span className={style.guideEmph}>diffusione</span> e popolarità.</p>
                </div>
                <p>Ora che sei abbastanza istruito per capire le informazioni che ti abbiamo fornito sulle criptovalute, vai subito ad analizzarle!  </p>
-               <Link>
+               <Link to='/data'>
                     <button className={style1.button}>Vai ai dati</button>
                </Link>
             </div>
