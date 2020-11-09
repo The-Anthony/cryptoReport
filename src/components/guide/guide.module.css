@@ -1,0 +1,133 @@
+:root {
+    --bgGuide: #1D2228;
+    --colGuide: #E1E2E2;
+    --empGuide: #FB8122;
+}
+
+.guide {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bgGuide);
+    color: var(--colGuide);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+.guideTitle {
+    font-family: 'Staatliches', cursive;
+    color: var(--empGuide)
+}
+
+.principalTitle {
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.guideEmph {
+    color: var(--empGuide);
+}
+
+.guideSub {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.tecnichWords .guideSub {
+    color: var(--empGuide);
+}
+
+.base, .tecnichWords {
+    width: 50%;
+}
+
+@media only screen and (max-width:540px) {
+    .base, .tecnichWords {
+        width: 85%;
+    }
+}
+
+/*MEDIA QUERY PER DISPOSITIVI CON SCHERMO RETINA -- (APPLE)*/
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 700px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 700px),
+only screen and ( min-resolution: 192dpi) and (min-width: 700px),
+only screen and ( min-resolution: 2dppx) and (min-width: 700px) {
+
+    .guide p {
+        font-size: 1.2em;
+    }
+    .base, .tecnichWords {
+        width: 70%;
+    }
+
+    .guideSub {
+        font-size: 1.5em;
+    }
+
+
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1024px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1024px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1024px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1024px) {
+ 
+    .guide p {
+        font-size: 1.5em;
+    }
+
+    .base h3, .tecnichWords h3 {
+        font-size: 2em;
+    }
+
+    .base h2, .tecnichWords h2 {
+        font-size: 2.3em;
+    }
+
+}
+
+@media
+only screen and ( -webkit-min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1920px),
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1920px),
+only screen and ( min-resolution: 192dpi) and (min-width: 1920px),
+only screen and ( min-resolution: 2dppx) and (min-width: 1920px) {
+    
+    .guide p {
+        font-size: 2.2em;
+    }
+
+    .principalTitle {
+        font-size: 6em;
+    }
+
+    .base h3, .tecnichWords h3 {
+        font-size: 2.5em;
+    }
+
+    .base h2, .tecnichWords h2 {
+        font-size: 3em;
+    }
+    
+}

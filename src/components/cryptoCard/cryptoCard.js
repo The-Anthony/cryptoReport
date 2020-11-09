@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './cryptoCard.css';
+import style from './cryptoCard.module.css';
 
 const CryptoCard = (props) => {
     return(
-        <div className='card'>
-            <p className='index'>{props.number +1}</p>
-            <h1 className='symbol'>{props.symbol}</h1>
-            <div className="firstData">
+        <div className={style.card}>
+            <p className={style.index}>{props.number +1}</p>
+            <h1 className={style.symbol}>{props.symbol}</h1>
+            <div className={style.firstData}>
 
-                <h3 className='marketCap'>
+                <h3 className={style.marketCap}>
                     {/* Formatto il numero grezzo per essere più gradevole da leggere */
                     // Nove zeri per i miliardi
                     Math.abs(Number(props.marketCap)) >= 1.0e+9
@@ -27,7 +27,7 @@ const CryptoCard = (props) => {
                     :( Math.abs(Number(props.marketCap))).toFixed(2)}
                 </h3>
 
-                <h3 className='price'>$
+                <h3 className={style.price}>$
                         
                     {/* Formatto il numero grezzo per essere più gradevole da leggere */
                     // Nove zeri per i miliardi
@@ -49,9 +49,9 @@ const CryptoCard = (props) => {
 
             </div>
             
-            <div className="secondData">
+            <div className={style.secondData}>
 
-                <h3 className='volume24h'>
+                <h3 className={style.volume24h}>
 
                     {/* Formatto il numero grezzo per essere più gradevole da leggere */
                     // Nove zeri per i miliardi
@@ -71,8 +71,8 @@ const CryptoCard = (props) => {
 
                 </h3>
 
-                {props.percentChange > 0 ? <h3 className='percentChangePlus'>{props.percentChange.toFixed(2)}%</h3> 
-                : <h3 className='percentChangeLess'>{props.percentChange.toFixed(2)}%</h3>
+                {props.percentChange > 0 ? <h3 className={style.percentChangePlus}>{props.percentChange.toFixed(2)}%</h3> 
+                : <h3 className={style.percentChangeLess}>{props.percentChange.toFixed(2)}%</h3>
                 }
             </div>
             

@@ -3,7 +3,7 @@ import axios from 'axios';
 //Componenti di react router
 import {useHistory, Link} from 'react-router-dom';
 //Stile 
-import './dataPage.css';
+import style from './dataPage.module.css';
 //Componenti
 import CryptoCard from '../cryptoCard/cryptoCard';
 import LegendWidget from '../legendWidget/legendWidget';
@@ -42,7 +42,7 @@ const DataPage = () => {
 
     const dataRequest = () => {
 
-        setContent(<img src={loading} alt='loading gif' className='loadingGif'/>); /*Imposta la gif di caricamento*/
+        setContent(<img src={loading} alt='loading gif' className={style.loadingGif}/>); /*Imposta la gif di caricamento*/
         
         //Utilizzo cors anywhere per evitare errori 
         const urlComplete = `https://cors-anywhere.herokuapp.com/${url}`; 
@@ -84,27 +84,27 @@ const DataPage = () => {
 
 
     return(
-        <div className="dataPage">
+        <div className={style.dataPage}>
 
             {/* Background tramite svg */}
-            <div className="background1">
-                <div className="custom-shape-divider-top-1603954741">
+            <div className={style.background1}>
+                <div className={style.customShapeDividerTop1603954741}>
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className={style.shapeFill}></path>
                     </svg>
                 </div>
             </div>
 
-            <div className='buttons'>
+            <div className={style.buttons}>
 
                 <Link to='/cryptoguide'>
-                    <button className='linkButton'>
+                    <button className={style.linkButton}>
                         Leggi la guida
                     </button>
                 </Link>
 
                 <button
-                    className='requestButton' 
+                    className={style.requestButton} 
                     onClick={() => {
                         setCounter(counter + 1);
                     }}
@@ -112,7 +112,7 @@ const DataPage = () => {
                     {content}
                 </button>
 
-                <select name="nCrypto" className='selectInput' onChange={updateNumber}>
+                <select name="nCrypto" className={style.selectInput} onChange={updateNumber}>
                     <option value="25">25</option>
                     <option value="50">50</option>
                     <option value="75">75</option>
@@ -124,7 +124,7 @@ const DataPage = () => {
             
             <LegendWidget/>
 
-            <div className='dataList'>
+            <div className={style.dataList}>
             {data.map((item, index) => (
                 <CryptoCard
                 key={index}
