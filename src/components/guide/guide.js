@@ -20,7 +20,7 @@ const Guide = () => {
                </div>
                <div className={style.tecnichWords}>
                    <h2 className={style.guideTitle}>Termini e Significati</h2>
-                   <p>Che cosa rappresentano i dati che ti abbiamo fornito? Qual'è il loro significato? Ecco la guida che ti illustra il loro significato.</p>
+                   <p>Che cosa rappresentano i dati che ti abbiamo fornito? Qual è il loro significato? Ecco la guida che ti illustra il loro significato.</p>
 
                     <h3 className={style.guideSub}>Prezzo</h3>
                     <p>Il prezzo è ovviamente il <span className={style.guideEmph}>valore</span> di un'unità di una determinata criptovaluta espresso in una moneta convenzionale come Euro o Dollari. Ma come si stabilisce il prezzo di una criptovaluta? Esattamente come ogni altro bene al mondo, il suo prezzo viene influenzato direttamente dalla <span className={style.guideEmph}>domanda</span> e l'<span className={style.guideEmph}>offerta</span> di mercato. Quindi proprio come l'azione di un'azienda, il suo valore varia anche di molto durante le 24h. Anche il valore di valute come dollaro ed euro viene stabilito in questo modo, ma poiché ogni secondo milioni di persone effettuano transazioni con quelle monete il loro prezzo è stabile e cambia solo di pochi centesimi.</p>
