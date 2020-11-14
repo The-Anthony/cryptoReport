@@ -25,7 +25,10 @@ scrivendo:
 Una volta fatto ciò, sei pronto per far partire il sito digitando nel terminale:
 - npm start
 
+
 ## Buon Proseguimento!
+
+### Il sito già pronto è disponibile [qui](https://cryptoreport-da471.web.app/)
 
 ## English 
 
@@ -57,3 +60,5 @@ Once this is done, you are ready to start the site by typing in the terminal:
 - npm start
 
 ## Good continuation
+
+### The ready-made site is available [here](https://cryptoreport-da471.web.app/)
